@@ -1,0 +1,99 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: peachpuff;
+}
+
+.form {
+  background-color: #fff;
+  padding: 1.2rem;
+  width: 300px;
+  margin: 20px auto;
+}
+
+button {
+  border: none;
+  background-color: #d64c4c;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.form input {
+  margin: 5px 0;
+  padding: 0.3rem;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  border: none;
+  background-color: #1860a8;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+#eventsContainer {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin: 3rem auto;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+
+.event {
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event .days {
+  text-align: center;
+  width: 100px;
+}
+
+.event .days .days-number {
+  font-size: 1.9rem;
+  font-weight: bold;
+  display: block;
+}
+
+.event .event-name {
+  padding: 0.8rem;
+  width: 200px;
+}
+
+.event .event-date {
+  padding: 0.8rem;
+  width: 100px;
+}
+
+.event .event-actions {
+  padding: 0.8rem;
+}
+
+@media (max-width: 500px) {
+  #eventsContainer {
+    width: 300px;
+  }
+
+  .event {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .event .event-name,
+  .event .event-date {
+    text-align: center;
+  }
+
+}
